@@ -1,7 +1,7 @@
-[submodule "personal-site/themes/KeepIt"]
-	path = personal-site/themes/KeepIt
+[submodule "themes/KeepIt"]
+	path = themes/KeepIt
 	url = https://github.com/Fastbyte01/KeepIt.git
-[submodule "personal-site/public"]
-	path = personal-site/public
+[submodule "public"]
+	path = public
 	url = git@github.com:cshubhamrao/cshubhamrao.github.io.git
 	branch = master
