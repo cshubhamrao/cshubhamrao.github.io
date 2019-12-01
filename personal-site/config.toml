@@ -1,0 +1,153 @@
+baseURL = "https://cshubhamrao.dev"
+languageCode = "en"
+defaultContentLanguage = "en"
+title = "Shubham Rao"
+theme = "KeepIt"
+
+paginate = 10
+enableEmoji = true
+enableRobotsTXT = true
+googleAnalytics = ""
+
+[sitemap]
+  changefreq = "monthly"
+  filename = "sitemap.xml"
+  priority = 0.5
+
+[blackfriday]
+  hrefTargetBlank = true
+  nofollowLinks = true
+  noreferrerLinks = true
+
+[Permalinks]
+ posts = "/:year/:filename/"
+
+[menu]
+  [[menu.main]]
+    name = "Blog"
+    url = "/posts/"
+    weight = 1
+
+  [[menu.main]]
+    name = "About"
+    url = "/about"
+    weight = 4
+
+[params]
+    since = 2019
+    author = "Shubham Rao"               # Author's name
+    subtitle = "Hi I am an undergrad student studying Computer Science and Engineering, specializing in Artificial Intelligence and Machine Learning."       # Subtitle
+    # cdn_url = "https://cdnjs.cloudflare.com/ajax/libs/"           # Base CDN URL
+    home_mode = "other" # post or other
+
+    google_verification = ""
+    bing_verification = ""
+    yandex_verification = ""
+    pinterest_verification = ""
+    baidu_verification = ""
+
+    avatar = "/logo.jpg" #comment it to use gravatar
+    socialShare = true
+
+    description = "Shubham Rao is an undergraduate student from SRM University, AP - Amaravati studying Computer Science and Engineering, specializing in Artificial Intelligence & Machine Learning" # site description
+    keywords = "cshubhamrao, cshubhamrao@gmail.com, Shubham Rao, Shubham SRM, Shubham" # site keywords
+
+    license= 'Released under <a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a>'
+
+[params.gravatar]
+    # email = "cshubhamrao@gmail.com"   #uncomment and insert your email address to use gravatar
+
+
+[params.social]
+    GitHub = "cshubhamrao"
+    Linkedin = "cshubhamrao"
+    Twitter = "cshubhamrao"
+    #Instagram = "cshubhamrao"
+    #Email   = "cshubhamrao@gmail.com"
+    Facebook = "cshubhamrao"
+    #Telegram = "cshubhamrao"
+    #Medium = "xxxx"
+    #Gitlab = "cshubhamrao"
+    #Youtubelegacy = "xxxx"
+    #Youtubecustom = "xxxx"
+    #Youtubechannel = "xxxx"
+    #Tumblr ="xxxx"
+    #Quora = "Shubham-Rao-5"
+    Keybase = "cshubhamrao"
+    #Pinterest = "xxxx"
+    #Reddit = "xxxx"
+    #Codepen = "xxxx"
+    #Bitbucket = "xxxx"
+    #Stackoverflow = "xxxxx"
+    #Weibo = "xxxx"
+    #Odnoklassniki = "xxxx"
+    #VKontakte = "xxxx"
+    #Flickr = "xxxx"
+    #Xing = "xxxx"
+    #Snapchat = "cshubhamrao"
+    #Soundcloud = "xxxx"
+    #Spotify = "xxxx"
+    #Bandcamp = "xxxx"
+    #Paypal = "xxxx"
+    #Fivehundredpx = "xxxx"
+    #Mix = "xxxx"
+    #Goodreads = "xxxx"
+    #Lastfm = "xxxx"
+    #Foursquare = "xxxx"
+    #Hackernews = "xxxx"
+    #Kickstarter = "xxxx"
+    #Patreon = "xxxx"
+    #Steam = "xxxx"
+    #Twitch = "xxxx"
+    #Strava = "xxxx"
+    #Skype = "xxxx"
+    #Whatsapp = "xxxx"
+    #Zhihu = "xxxx"
+    #Douban = "xxxx"
+    #Angellist = "cshubhamrao"
+    #Slidershare = "xxxx"
+    #Jsfiddle = "xxxx"
+    #Deviantart = "xxxx"
+    #Behance = "xxxx"
+    #Dribble = "xxxx"
+    #Wordpress = "xxxx"
+    #Vine = "xxxx"
+    #Googlescholar = "xxxx"
+    #Researchgate = "xxxx"
+    #Mastodon = "xxxx"
+    #Thingiverse = "xxxx"
+
+[params.share]
+Twitter = true
+Facebook = true
+Linkedin = true
+#Reddit = true
+#Pinterest = true
+#HackerNews = true
+#Mix = true
+#Tumblr = true
+#VKontakte = true
+#Douban = true
+#Weibo = true
+
+# Used only for Seo schema
+copyright = "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License."
+
+[author]
+  name = "cshubhamrao"
+
+  [params.publisher]
+    name = "cshubhamrao"
+
+    [params.publisher.logo]
+      url = "logo.jpg"
+      width = 127
+      height = 40
+
+  [params.logo]
+    url = "logo.jpg"
+    width = 127
+    height = 40
+
+[params.valine]
+  enable = false
