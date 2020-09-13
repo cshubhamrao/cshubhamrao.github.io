@@ -63,4 +63,4 @@ Disallow: /
 User-agent: ZoominfoBot
 Disallow: /
 
-Sitemap: https://cshubhamrao.me/sitemap.xml
+Sitemap: https://cshubhamrao.dev/sitemap.xml
