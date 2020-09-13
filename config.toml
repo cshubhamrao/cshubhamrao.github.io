@@ -1,153 +1,119 @@
-baseURL = "https://cshubhamrao.me"
+baseURL = "https://cshubhamrao.dev"
 languageCode = "en"
 defaultContentLanguage = "en"
 title = "Shubham Rao"
-theme = "KeepIt"
+theme = "hugo-coder"
 
-paginate = 10
-enableEmoji = true
-enableRobotsTXT = true
-googleAnalytics = "UA-44812651-1"
+paginate = 20
+canonifyurls = true
 
-[sitemap]
-  changefreq = "monthly"
-  filename = "sitemap.xml"
-  priority = 0.5
+pygmentsstyle = "b2"
+pygmentscodefences = true
+pygmentscodefencesguesssyntax = true
 
-[blackfriday]
-  hrefTargetBlank = true
-  nofollowLinks = true
-  noreferrerLinks = true
-
-[Permalinks]
- posts = "/:year/:filename/"
-
-[menu]
-  [[menu.main]]
-    name = "Blog"
-    url = "/posts/"
-    weight = 1
-
-  [[menu.main]]
-    name = "About"
-    url = "/about/"
-    weight = 4
+# disqusShortname = "yourdiscussshortname"
 
 [params]
-    since = 2019
-    author = "Shubham Rao"               # Author's name
-    subtitle = "Hi I am an undergrad student studying Computer Science and Engineering, specializing in Artificial Intelligence and Machine Learning."       # Subtitle
-    # cdn_url = "https://cdnjs.cloudflare.com/ajax/libs/"           # Base CDN URL
-    home_mode = "other" # post or other
+    author = "Shubham Rao"
+    description = "Shubham Rao's personal website"
+    keywords = "blog,developer,personal"
+    info = "AI/ML/DL Engineer"
+    avatarurl = "logo.jpg"
+    #gravatar = "john.doe@example.com"
+    footercontent = "Computer Science undergrad looking for a career as a Machine Learning and Artificial Intelligence Engineer. Experienced ML practitioner with a strong background in designing, developing and deploying ML applications. Experienced in a variety of Computer Science and Software Development Skills."
 
-    google_verification = ""
-    bing_verification = ""
-    yandex_verification = ""
-    pinterest_verification = ""
-    baidu_verification = ""
+    dateformat = "January 2, 2006"
 
-    avatar = "/logo.jpg" #comment it to use gravatar
-    socialShare = true
+    hideFooter = false
+    hideCredits = false
+    hideCopyright = false
+    since = 2020
 
-    description = "Shubham Rao is an undergraduate student from SRM University, AP - Amaravati studying Computer Science and Engineering, specializing in Artificial Intelligence and Machine Learning" # site description
-    keywords = "cshubhamrao, cshubhamrao@gmail.com, Shubham Rao, Shubham SRM, Shubham" # site keywords
+    # Git Commit in Footer, uncomment the line below to enable it.
+    commit = "https://github.com/luizdepra/hugo-coder/tree/"
 
-    license= 'Released under <a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a>'
+    rtl = false
 
-[params.gravatar]
-    # email = "cshubhamrao@gmail.com"   #uncomment and insert your email address to use gravatar
+    # Specify light/dark colorscheme
+    # Supported values:
+    # "auto" (use preference set by browser)
+    # "dark" (dark background, light foreground)
+    # "light" (light background, dark foreground) (default)
+    colorscheme = "auto"
+
+    # Series see also post count
+    maxSeeAlsoItems = 5
+
+    # Enable Twemoji
+    enableTwemoji = false
+
+    # Custom CSS
+    custom_css = []
+
+    # Custom JS
+    custom_js = []
+
+# # If you want to use fathom(https://usefathom.com) for analytics, add this section
+# [params.fathomAnalytics]
+#     siteID = "ABCDE"
+#     # Default value is cdn.usefathom.com, overwrite this if you are self-hosting
+#     serverURL = "analytics.example.com"
+
+[taxonomies]
+  category = "categories"
+  series = "series"
+  tag = "tags"
+
+[[params.social]]
+    name = "Github"
+    icon = "fab fa-github"
+    weight = 1
+    url = "https://github.com/cshubhamrao/"
+[[params.social]]
+    name = "Twitter"
+    icon = "fab fa-twitter"
+    weight = 3
+    url = "https://twitter.com/cshubhamrao/"
+[[params.social]]
+    name = "LinkedIn"
+    icon = "fab fa-linkedin"
+    weight = 2
+    url = "https://www.linkedin.com/in/cshubhamrao/"
+[[params.social]]
+    name = "Email"
+    icon = "fab fa-facebook"
+    weight = 4
+    url = "https://www.facebook.com/cshubhamrao"
+[[params.social]]
+    name = "Email"
+    icon = "fas fa-envelope"
+    weight = 5
+    url = "mailto:contact@cshubhamrao.dev"
 
 
-[params.social]
-    GitHub = "cshubhamrao"
-    Linkedin = "cshubhamrao"
-    Twitter = "cshubhamrao"
-    #Instagram = "cshubhamrao"
-    #Email   = "cshubhamrao@gmail.com"
-    Facebook = "cshubhamrao"
-    #Telegram = "cshubhamrao"
-    #Medium = "xxxx"
-    #Gitlab = "cshubhamrao"
-    #Youtubelegacy = "xxxx"
-    #Youtubecustom = "xxxx"
-    #Youtubechannel = "xxxx"
-    #Tumblr ="xxxx"
-    #Quora = "Shubham-Rao-5"
-    Keybase = "cshubhamrao"
-    #Pinterest = "xxxx"
-    #Reddit = "xxxx"
-    #Codepen = "xxxx"
-    #Bitbucket = "xxxx"
-    #Stackoverflow = "xxxxx"
-    #Weibo = "xxxx"
-    #Odnoklassniki = "xxxx"
-    #VKontakte = "xxxx"
-    #Flickr = "xxxx"
-    #Xing = "xxxx"
-    #Snapchat = "cshubhamrao"
-    #Soundcloud = "xxxx"
-    #Spotify = "xxxx"
-    #Bandcamp = "xxxx"
-    #Paypal = "xxxx"
-    #Fivehundredpx = "xxxx"
-    #Mix = "xxxx"
-    #Goodreads = "xxxx"
-    #Lastfm = "xxxx"
-    #Foursquare = "xxxx"
-    #Hackernews = "xxxx"
-    #Kickstarter = "xxxx"
-    #Patreon = "xxxx"
-    #Steam = "xxxx"
-    #Twitch = "xxxx"
-    #Strava = "xxxx"
-    #Skype = "xxxx"
-    #Whatsapp = "xxxx"
-    #Zhihu = "xxxx"
-    #Douban = "xxxx"
-    #Angellist = "cshubhamrao"
-    #Slidershare = "xxxx"
-    #Jsfiddle = "xxxx"
-    #Deviantart = "xxxx"
-    #Behance = "xxxx"
-    #Dribble = "xxxx"
-    #Wordpress = "xxxx"
-    #Vine = "xxxx"
-    #Googlescholar = "xxxx"
-    #Researchgate = "xxxx"
-    #Mastodon = "xxxx"
-    #Thingiverse = "xxxx"
+[languages]
+    [languages.en]
+        languagename = "English"
 
-[params.share]
-Twitter = true
-Facebook = true
-Linkedin = true
-#Reddit = true
-#Pinterest = true
-#HackerNews = true
-#Mix = true
-#Tumblr = true
-#VKontakte = true
-#Douban = true
-#Weibo = true
+        [languages.en.menu]
 
-# Used only for Seo schema
-copyright = "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License."
+            [[languages.en.menu.main]]
+            name = "About"
+            weight = 1
+            url = "about/"
 
-[author]
-  name = "cshubhamrao"
+            # [[languages.en.menu.main]]
+            # name = "Blog"
+            # weight = 2
+            # url = "posts/"
 
-  [params.publisher]
-    name = "Shubham Rao"
+            # [[languages.en.menu.main]]
+            # name = "Projects"
+            # weight = 3
+            # url = "projects/"
 
-    [params.publisher.logo]
-      url = "logo.jpg"
-      width = 127
-      height = 40
+            # [[languages.en.menu.main]]
+            # name = "Contact me"
+            # weight = 5
+            # url = "contact/"
 
-  [params.logo]
-    url = "logo.jpg"
-    width = 127
-    height = 40
-
-[params.valine]
-  enable = false

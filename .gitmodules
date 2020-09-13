@@ -1,7 +1,12 @@
-[submodule "themes/KeepIt"]
-	path = themes/KeepIt
-	url = https://github.com/Fastbyte01/KeepIt.git
+#[submodule "themes/KeepIt"]
+#	path = themes/KeepIt
+#	url = https://github.com/Fastbyte01/KeepIt.git
+
 [submodule "public"]
 	path = public
 	url = git@github.com:cshubhamrao/cshubhamrao.github.io.git
 	branch = master
+[submodule "themes/hugo-coder"]
+	path = themes/hugo-coder
+    url = https://github.com/luizdepra/hugo-coder.git
+    branch = master
