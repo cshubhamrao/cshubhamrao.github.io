@@ -19,6 +19,8 @@ pygmentscodefencesguesssyntax = true
     keywords = "blog,developer,personal"
     info = "AI/ML/DL Engineer"
     avatarurl = "logo.jpg"
+    favicon_32 = "favicon-32x32.png"
+    favicon_16 = "favicon-16x16.png"
     #gravatar = "john.doe@example.com"
     footercontent = "Computer Science undergrad looking for a career as a Machine Learning and Artificial Intelligence Engineer. Experienced ML practitioner with a strong background in designing, developing and deploying ML applications. Experienced in a variety of Computer Science and Software Development Skills."
 
