@@ -6,7 +6,7 @@
         {
             "label": "Build Site",
             "type": "shell",
-            "command": "HUGO_ENV=production hugo --gc --minify -t KeepIt",
+            "command": "HUGO_ENV=production hugo --gc --minify -t hugo-coder",
             "group": {
                 "kind": "build",
                 "isDefault": true
