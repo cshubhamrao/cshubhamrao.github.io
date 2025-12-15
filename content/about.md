@@ -1,7 +1,7 @@
 ---
 title: "About Me"
 description: "Backend engineer building high-throughput APIs and distributed systems. Golang, Python, and cloud-native infrastructure."
-date: 2024-12-15
+date: 2025-12-15
 draft: false
 showToc: true
 TocOpen: true
@@ -14,6 +14,12 @@ Over the past 5 years, I've built systems that process **100M+ tokens daily**, a
 ---
 
 ## What I've Built
+
+### @ Lyric
+
+**Software Engineer** — *2025–Present*
+
+Building performant backend systems with a focus on scalability and reliability. Working with Kubernetes, Golang, and cloud-native infrastructure to deliver production-grade solutions.
 
 ### @ Tune AI (formerly NimbleBox.ai)
 
@@ -28,6 +34,32 @@ Built the gRPC backbone for a model serving system handling **100M tokens/day** 
 **Deep Learning Engineer** — *2020–2021*
 
 Where it all started. Built ML pipeline orchestration, containerized model serving with FastAPI, and learned that production ML is mostly plumbing.
+
+---
+
+## Projects
+
+### docker-hub-data
+End-to-end data analysis framework for identifying software engineering trends from Docker Hub. Built during **UC Berkeley's Data-X course** using Python, Pandas, and AWS S3. Implemented cloud-native data pipeline for collecting, analyzing, and visualizing containerization patterns.
+
+**Tech**: Python, Pandas, Plotly, AWS S3, Jupyter
+
+### sagemaker-ovms-serving-container
+OpenVINO Model Server (OVMS) integration for AWS SageMaker. Enables efficient deployment of optimized inference models on SageMaker infrastructure.
+
+**Tech**: Docker, AWS SageMaker, OpenVINO
+
+### Colbert-AI
+Twitter bot mimicking Stephen Colbert's style using natural language processing. Automated content generation and posting pipeline.
+
+**Tech**: Python, NLP, Twitter API
+
+---
+
+## Community Work
+
+### DevOps Days 2023
+Participated in DevOps Days 2023, engaging with the community around cloud-native infrastructure, observability practices, and modern deployment strategies.
 
 ---
 
@@ -49,6 +81,7 @@ Where it all started. Built ML pipeline orchestration, containerized model servi
 
 **UC Berkeley** — Visiting Student, Spring 2019
 *$20,000 scholarship recipient*
+Completed Data-X course, building end-to-end data engineering project analyzing Docker Hub trends
 
 ---
 
