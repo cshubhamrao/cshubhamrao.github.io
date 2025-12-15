@@ -1,30 +1,36 @@
 # Shubham Rao - Personal Website
 
-> Backend Specialist with expertise in Golang and Python. Building high-throughput APIs and distributed systems handling 100M+ tokens daily.
+> Software Engineer who builds the backend for your backends. APIs, infrastructure, MLOps, and platform engineering.
 
 ## About
 
-Shubham Rao is a Backend Specialist and former Engineering Team Lead at Tune AI (NimbleBox.ai). He has expertise in:
+Shubham Rao is a Senior Software Engineer at Lyric.tech (Core/Platform team), previously at Tune AI (NimbleBox.ai). Expertise in:
 
-- **Languages**: Golang (4+ years), Python (5+ years), SQL
-- **Backend**: gRPC, Protocol Buffers, RESTful APIs, FastAPI, Echo
-- **Infrastructure**: Kubernetes, Docker, AWS, GCP, Kafka, RabbitMQ, PostgreSQL
-- **Observability**: OpenTelemetry, Distributed Tracing, Structured Logging
+- **Languages**: Go (4+ years), Python (5+ years), TypeScript, SQL
+- **Backend**: gRPC, Protocol Buffers, RESTful APIs, FastAPI, Apache APISIX
+- **Infrastructure**: Kubernetes, Docker, AWS, GCP, Kafka, RabbitMQ
+- **Observability**: OpenTelemetry, distributed tracing, structured logging
 
 ## Experience
 
-- **Engineering Team Lead** at Tune AI (2024-2025): Architected document processing handling 100K documents daily, reducing costs by 54%
-- **Senior Software Engineer** at Tune AI (2021-2023): Built model serving system handling 100M tokens/day, led OpenTelemetry adoption
-- **Deep Learning Engineer** at NimbleBox.ai (2020-2021): ML pipeline orchestration and containerized model serving
+- **Senior Software Engineer** at Lyric.tech (2025–Present): Core backend team, TypeScript, system architecture
+- **Software Engineer** at Tune AI (2020–2025): Built 100M+ token/day serving systems, OpenTelemetry adoption, document processing pipelines
+
+## Speaking
+
+- **DevOpsDays Bengaluru 2023**: "Journey to using APISIX as a Reverse Proxy" — on-demand authorization, dynamic routing, observability
 
 ## Education
 
 - Bachelor of Technology, Computer Science - SRM University (2017-2021)
-- Visiting Student, UC Berkeley (Spring 2019) - $20,000 scholarship recipient
+- Visiting Student, UC Berkeley SCET (Spring 2019) - $20,000 scholarship recipient
 
-## Certifications
+## Side Projects
 
-- Google Cloud Associate Cloud Engineer (Valid until 2026)
+- Colbert AI (GPT-2 language model, pre-ChatGPT era)
+- ovms-serving (OpenVINO Model Server tooling)
+- k8s-dashboard fix (Kubernetes Dashboard contribution)
+- proto-opt-parse (Protobuf option parsing for Go)
 
 ## Contact
 
