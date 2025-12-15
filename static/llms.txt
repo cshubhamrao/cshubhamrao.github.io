@@ -1,0 +1,34 @@
+# Shubham Rao - Personal Website
+
+> Backend Specialist with expertise in Golang and Python. Building high-throughput APIs and distributed systems handling 100M+ tokens daily.
+
+## About
+
+Shubham Rao is a Backend Specialist and former Engineering Team Lead at Tune AI (NimbleBox.ai). He has expertise in:
+
+- **Languages**: Golang (4+ years), Python (5+ years), SQL
+- **Backend**: gRPC, Protocol Buffers, RESTful APIs, FastAPI, Echo
+- **Infrastructure**: Kubernetes, Docker, AWS, GCP, Kafka, RabbitMQ, PostgreSQL
+- **Observability**: OpenTelemetry, Distributed Tracing, Structured Logging
+
+## Experience
+
+- **Engineering Team Lead** at Tune AI (2024-2025): Architected document processing handling 100K documents daily, reducing costs by 54%
+- **Senior Software Engineer** at Tune AI (2021-2023): Built model serving system handling 100M tokens/day, led OpenTelemetry adoption
+- **Deep Learning Engineer** at NimbleBox.ai (2020-2021): ML pipeline orchestration and containerized model serving
+
+## Education
+
+- Bachelor of Technology, Computer Science - SRM University (2017-2021)
+- Visiting Student, UC Berkeley (Spring 2019) - $20,000 scholarship recipient
+
+## Certifications
+
+- Google Cloud Associate Cloud Engineer (Valid until 2026)
+
+## Contact
+
+- Email: contact@cshubhamrao.dev
+- GitHub: https://github.com/cshubhamrao
+- LinkedIn: https://www.linkedin.com/in/cshubhamrao
+- Website: https://cshubhamrao.dev

@@ -1,0 +1,115 @@
+baseURL: "https://cshubhamrao.dev"
+title: Shubham Rao
+theme: PaperMod
+
+pagination:
+  pagerSize: 5
+
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+
+minify:
+  disableXML: true
+  minifyOutput: true
+
+languages:
+  en:
+    languageName: "English"
+    weight: 1
+    taxonomies:
+      category: categories
+      tag: tags
+      series: series
+
+params:
+  env: production  # Enables OpenGraph, Twitter Cards, Schema.org
+  title: Shubham Rao
+  description: "Backend Specialist with expertise in Golang and Python. Building high-throughput APIs and distributed systems."
+  keywords: [Backend Engineer, Golang, Python, Machine Learning, AI, Software Engineer]
+  author: Shubham Rao
+  images: ["/og-image.png"]
+  DateFormat: "January 2006"
+  defaultTheme: auto
+  disableThemeToggle: false
+
+  ShowReadingTime: true
+  ShowShareButtons: false
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: true
+  ShowWordCount: false
+  ShowRssButtonInSectionTermList: true
+  UseHugoToc: true
+  disableSpecial1stPost: false
+  disableScrollToTop: false
+  comments: false
+  hidemeta: false
+  hideSummary: false
+  showtoc: true
+  tocopen: false
+
+  assets:
+    favicon: "/favicon.ico"
+    favicon16x16: "/favicon-16x16.png"
+    favicon32x32: "/favicon-32x32.png"
+    apple_touch_icon: "/apple-touch-icon.png"
+    safari_pinned_tab: "/safari-pinned-tab.svg"
+
+  label:
+    text: "Shubham Rao"
+    icon: /apple-touch-icon.png
+    iconHeight: 35
+
+  # Profile Mode for portfolio homepage
+  profileMode:
+    enabled: true
+    title: "Shubham Rao"
+    subtitle: |
+      I build systems that scale — from 100M+ token APIs to enterprise document pipelines.
+
+      Backend engineer obsessed with Go, Python, and making distributed systems behave.
+    imageUrl: "/logo.jpg"
+    imageWidth: 150
+    imageHeight: 150
+    imageTitle: "Shubham Rao"
+    buttons:
+      - name: About Me
+        url: about
+
+  socialIcons:
+    - name: github
+      url: "https://github.com/cshubhamrao/"
+    - name: linkedin
+      url: "https://www.linkedin.com/in/cshubhamrao/"
+    - name: x
+      url: "https://twitter.com/cshubhamrao/"
+    - name: email
+      url: "mailto:contact@cshubhamrao.dev"
+
+  cover:
+    hidden: true
+    hiddenInList: true
+    hiddenInSingle: true
+
+menu:
+  main:
+    - identifier: about
+      name: About
+      url: /about/
+      weight: 10
+
+outputs:
+  home:
+    - HTML
+    - RSS
+
+markup:
+  highlight:
+    noClasses: false
+    anchorLineNos: true
+    codeFences: true
+    guessSyntax: true
+    lineNos: false
+    style: monokai
