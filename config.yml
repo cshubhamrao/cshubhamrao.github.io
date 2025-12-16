@@ -70,29 +70,91 @@ params:
       - "https://twitter.com/cshubhamrao/"
       - "mailto:contact@cshubhamrao.dev"
     person:
-      jobTitle: "Senior Software Engineer, Core Platform"
+      alternateName: "cshubhamrao"
+      description: "Senior Software Engineer building platform backends: APIs, infra, and reliability. I bridge AI research and production-scale systems, designing inference platforms that sling tokens at scale."
+      jobTitle: "Senior Software Engineer, Core (Platform)"
       worksFor:
         name: "Lyric.tech"
         url: "https://www.lyric.tech/"
       alumniOf:
-        - name: "UC Berkeley Sutardja Center for Entrepreneurship & Technology"
-          url: "https://scet.berkeley.edu/"
+        - name: "UC Berkeley College of Engineering"
+          url: "https://engineering.berkeley.edu/"
         - name: "SRM University, AP"
           url: "https://www.srmap.edu.in/"
       knowsAbout:
         - Distributed Systems
         - Platform Engineering
+        - Backend Engineering
         - Observability
-        - Generative AI Infrastructure
+        - API Design
+        - Microservices Architecture
+        - Go Programming
+        - Python Programming
+        - LLM Infrastructure
+        - System Design
+        - Database Systems
+        - MLOps
+        - Kubernetes
+        - TypeScript
+        - gRPC
+        - API Gateway Architecture
+        - OpenTelemetry
+        - Docker
+        - Cloud Computing
       knowsLanguage:
         - English
         - Hindi
         - Telugu
+      hasCredential:
+        - credentialCategory: "Professional Certification"
+          name: "Google Cloud Associate Cloud Engineer"
+          recognizedBy: "Google Cloud"
       award:
-        - "Winner, IIIT-Delhi HACKIIITD 2017"
-        - "Google Cloud Associate Cloud Engineer"
-      email: "mailto:contact@cshubhamrao.dev"
-      url: "https://cshubhamrao.dev/about/"
+        - "Winner, IIIT-Delhi HACKIIITD 2017 (1st place out of 800+ teams)"
+        - "President's Placement Award - SRM University"
+        - "Grand Finalist - TCS IT Wiz 2013"
+        - "Google Cloud Associate Cloud Engineer Certification"
+      hasOccupation:
+        name: "Senior Software Engineer"
+        occupationalCategory: "15-1252.00"
+        description: "Building core backend services and platform infrastructure. Specializing in distributed systems, MLOps, and high-scale API architecture."
+        skills:
+          - Go
+          - Python
+          - TypeScript
+          - Kubernetes
+          - Docker
+          - AWS
+          - GCP
+          - Apache APISIX
+          - Kafka
+          - RabbitMQ
+          - PostgreSQL
+          - Redis
+          - OpenTelemetry
+          - gRPC
+          - System Design
+          - Platform Engineering
+      workLocation: "Remote"
+      nationality: "India"
+      contactPoint:
+        email: "contact@cshubhamrao.dev"
+        contactType: "Professional"
+        availableLanguage:
+          - English
+          - Hindi
+          - Telugu
+      performerIn:
+        - name: "DevOpsDays Bengaluru 2023"
+          description: "Talk on APISIX as reverse proxy for high-volume inference traffic"
+          startDate: "2023"
+      memberOf:
+        - name: "Next Tech Lab AP"
+          description: "Board Member - Scaled organization from <20 to 150+ members"
+        - name: "ACM Student Chapter"
+          description: "Founding Member - Grew chapter to 200+ members"
+      email: "contact@cshubhamrao.dev"
+      url: "https://cshubhamrao.dev"
       image: "/logo.jpg"
 
   # Profile Mode for portfolio homepage

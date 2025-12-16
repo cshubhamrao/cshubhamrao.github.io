@@ -115,53 +115,159 @@
   "datePublished": {{ $profilePub }},
   "dateModified": {{ $profileMod }},
   "mainEntity": {
+    "@context": "https://schema.org",
     "@type": "Person",
+    "@id": {{ printf "%s/#person" $primaryURL | absURL | jsonify | safeJS }},
     "name": {{ site.Title | jsonify | safeJS }},
+    {{- with $personConfig.alternateName }}
+    "alternateName": {{ . | jsonify | safeJS }},
+    {{- end }}
     "url": {{ $primaryURL | absURL | jsonify | safeJS }},
     {{- $personImage := (or (and $personConfig $personConfig.image) site.Params.profileMode.imageUrl (site.Params.assets.favicon | default "favicon.ico")) -}}
     "image": {{ $personImage | absURL | jsonify | safeJS }},
+    {{- with $personConfig.description }}
+    "description": {{ . | jsonify | safeJS }},
+    {{- end }}
+    {{- with $personConfig.jobTitle }}
+    "jobTitle": {{ . | jsonify | safeJS }},
+    {{- end }}
+    {{- with $personConfig.email }}
+    "email": {{ . | jsonify | safeJS }},
+    {{- end }}
+    {{- with $personConfig.worksFor }}
+    "worksFor": {
+      "@type": "Organization",
+      "name": {{ .name | jsonify | safeJS }}
+      {{- with .url }}, "url": {{ . | jsonify | safeJS }}{{- end }}
+    },
+    {{- end }}
+    {{- with $personConfig.alumniOf }}
+    "alumniOf": [
+      {{- range $i, $edu := . }}
+        {{- if $i }}, {{- end }}
+      {
+        "@type": "EducationalOrganization",
+        "name": {{ $edu.name | jsonify | safeJS }}
+        {{- with $edu.url }}, "url": {{ . | jsonify | safeJS }}{{- end }}
+      }
+      {{- end }}
+    ],
+    {{- end }}
+    {{- with $personConfig.knowsAbout }}
+    "knowsAbout": {{ . | jsonify | safeJS }},
+    {{- end }}
+    {{- with $personConfig.knowsLanguage }}
+    "knowsLanguage": [
+      {{- range $i, $lang := . }}
+        {{- if $i }}, {{- end }}
+      {
+        "@type": "Language",
+        "name": {{ $lang | jsonify | safeJS }}
+      }
+      {{- end }}
+    ],
+    {{- end }}
+    {{- with $personConfig.hasCredential }}
+    "hasCredential": [
+      {{- range $i, $cred := . }}
+        {{- if $i }}, {{- end }}
+      {
+        "@type": "EducationalOccupationalCredential",
+        "credentialCategory": {{ $cred.credentialCategory | jsonify | safeJS }},
+        "name": {{ $cred.name | jsonify | safeJS }},
+        "recognizedBy": {
+          "@type": "Organization",
+          "name": {{ $cred.recognizedBy | jsonify | safeJS }}
+        }
+      }
+      {{- end }}
+    ],
+    {{- end }}
+    {{- with $personConfig.award }}
+    "award": {{ . | jsonify | safeJS }},
+    {{- end }}
+    {{- with $personConfig.hasOccupation }}
+    "hasOccupation": {
+      "@type": "Occupation",
+      "name": {{ .name | jsonify | safeJS }},
+      "occupationalCategory": {{ .occupationalCategory | jsonify | safeJS }},
+      "description": {{ .description | jsonify | safeJS }},
+      "skills": {{ .skills | jsonify | safeJS }}
+    },
+    {{- end }}
     "sameAs": [
       {{- if site.Params.schema.sameAs }}
       {{ range $i, $e := site.Params.schema.sameAs }}{{ if $i }}, {{ end }}{{ trim $e " " | jsonify | safeJS }}{{ end }}
       {{- else}}
         {{ range $i, $e := site.Params.SocialIcons }}{{ if $i }}, {{ end }}{{ trim $e.url " " | jsonify | safeJS }}{{ end }}
       {{- end}}
+    ],
+    {{- with $personConfig.workLocation }}
+    "workLocation": {
+      "@type": "Place",
+      "name": {{ . | jsonify | safeJS }}
+    },
+    {{- end }}
+    {{- with $personConfig.nationality }}
+    "nationality": {
+      "@type": "Country",
+      "name": {{ . | jsonify | safeJS }}
+    },
+    {{- end }}
+    {{- with $personConfig.contactPoint }}
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "email": {{ .email | jsonify | safeJS }},
+      "contactType": {{ .contactType | jsonify | safeJS }},
+      "availableLanguage": {{ .availableLanguage | jsonify | safeJS }}
+    },
+    {{- end }}
+    "interactionStatistic": [
+      {{- if site.Params.schema.sameAs }}
+        {{- $socialLinks := dict "github.com" "GitHub Profile" "linkedin.com" "LinkedIn Profile" "twitter.com" "Twitter Profile" -}}
+        {{- range $i, $url := site.Params.schema.sameAs }}
+          {{- if not (hasPrefix $url "mailto:") }}
+            {{- if $i }}, {{- end }}
+      {
+        "@type": "InteractionCounter",
+        "interactionType": "https://schema.org/FollowAction",
+        {{- range $domain, $label := $socialLinks }}
+          {{- if (findRE $domain $url) }}
+        "userInteractionCount": {{ $label | jsonify | safeJS }},
+          {{- end }}
+        {{- end }}
+        "url": {{ trim $url " " | jsonify | safeJS }}
+      }
+          {{- end }}
+        {{- end }}
+      {{- end }}
     ]
-    {{- with $personConfig }}
-    {{- with .jobTitle }}
-    ,"jobTitle": {{ . | jsonify | safeJS }}
+    {{- with $personConfig.performerIn }}
+    ,"performerIn": [
+      {{- range $i, $event := . }}
+        {{- if $i }}, {{- end }}
+      {
+        "@type": "Event",
+        "name": {{ $event.name | jsonify | safeJS }},
+        "description": {{ $event.description | jsonify | safeJS }},
+        "startDate": {{ $event.startDate | jsonify | safeJS }},
+        "eventStatus": "https://schema.org/EventScheduled",
+        "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode"
+      }
       {{- end }}
-      {{- with .worksFor }}
-    ,"worksFor": {
-      "@type": "Organization",
-      "name": {{ .name | jsonify | safeJS }}
-      {{- with .url }}, "url": {{ . | jsonify | safeJS }}{{- end }}
-    }
-      {{- end }}
-      {{- with .alumniOf }}
-    ,"alumniOf": [
-        {{- range $i, $edu := . }}
-          {{- if $i }}, {{- end }}
+    ]
+    {{- end }}
+    {{- with $personConfig.memberOf }}
+    ,"memberOf": [
+      {{- range $i, $org := . }}
+        {{- if $i }}, {{- end }}
       {
         "@type": "Organization",
-        "name": {{ $edu.name | jsonify | safeJS }}
-        {{- with $edu.url }}, "url": {{ . | jsonify | safeJS }}{{- end }}
+        "name": {{ $org.name | jsonify | safeJS }},
+        "description": {{ $org.description | jsonify | safeJS }}
       }
-        {{- end }}
+      {{- end }}
     ]
-      {{- end }}
-      {{- with .knowsAbout }}
-    ,"knowsAbout": {{ . | jsonify | safeJS }}
-      {{- end }}
-      {{- with .knowsLanguage }}
-    ,"knowsLanguage": {{ . | jsonify | safeJS }}
-      {{- end }}
-      {{- with .award }}
-    ,"award": {{ . | jsonify | safeJS }}
-      {{- end }}
-      {{- with .email }}
-    ,"email": {{ . | jsonify | safeJS }}
-      {{- end }}
     {{- end }}
   }
 }
