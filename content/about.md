@@ -2,9 +2,11 @@
 title: "About Me"
 description: "Senior Software Engineer building platform backends: APIs, infra, and reliability."
 date: 2024-12-15
+lastmod: 2025-01-05
 draft: false
 showToc: true
 TocOpen: true
+schemaProfilePage: true
 ---
 
 Hey! I'm Shubham — a Software Engineer who builds the backend for your backends. APIs, infrastructure, the stuff that sits behind the stuff users actually see. I've spent the last few years deep in MLOps and platform engineering, building systems that serve **100M+ tokens a day** without catching fire.

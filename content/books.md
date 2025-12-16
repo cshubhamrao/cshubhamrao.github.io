@@ -1,6 +1,8 @@
 ---
 title: "Books"
 description: "Quick shelf notes. No reviews."
+date: 2024-12-15
+lastmod: 2025-01-20
 draft: false
 showToc: true
 TocOpen: true

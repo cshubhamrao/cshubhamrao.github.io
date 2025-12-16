@@ -100,10 +100,77 @@
 }
 </script>
 {{- if .IsPage }}
+  {{- if (.Param "schemaProfilePage") }}
+<script type="application/ld+json">
+{
+  {{- $personConfig := site.Params.schema.person -}}
+  {{- $primaryURL := cond (and $personConfig $personConfig.url) $personConfig.url site.Home.Permalink -}}
+  "@context": "https://schema.org",
+  "@type": "ProfilePage",
+  "name": {{ .Title | plainify | jsonify | safeJS }},
+  "url": {{ .Permalink | jsonify | safeJS }},
+  "description": {{ with .Description | plainify }}{{ . | jsonify | safeJS }}{{ else }}{{ .Summary | plainify | jsonify | safeJS }}{{ end }},
+  {{- $profilePub := (.PublishDate | default .Date) -}}
+  {{- $profileMod := (.Lastmod | default $profilePub) -}}
+  "datePublished": {{ $profilePub }},
+  "dateModified": {{ $profileMod }},
+  "mainEntity": {
+    "@type": "Person",
+    "name": {{ site.Title | jsonify | safeJS }},
+    "url": {{ $primaryURL | absURL | jsonify | safeJS }},
+    {{- $personImage := (or (and $personConfig $personConfig.image) site.Params.profileMode.imageUrl (site.Params.assets.favicon | default "favicon.ico")) -}}
+    "image": {{ $personImage | absURL | jsonify | safeJS }},
+    "sameAs": [
+      {{- if site.Params.schema.sameAs }}
+      {{ range $i, $e := site.Params.schema.sameAs }}{{ if $i }}, {{ end }}{{ trim $e " " | jsonify | safeJS }}{{ end }}
+      {{- else}}
+        {{ range $i, $e := site.Params.SocialIcons }}{{ if $i }}, {{ end }}{{ trim $e.url " " | jsonify | safeJS }}{{ end }}
+      {{- end}}
+    ]
+    {{- with $personConfig }}
+    {{- with .jobTitle }}
+    ,"jobTitle": {{ . | jsonify | safeJS }}
+      {{- end }}
+      {{- with .worksFor }}
+    ,"worksFor": {
+      "@type": "Organization",
+      "name": {{ .name | jsonify | safeJS }}
+      {{- with .url }}, "url": {{ . | jsonify | safeJS }}{{- end }}
+    }
+      {{- end }}
+      {{- with .alumniOf }}
+    ,"alumniOf": [
+        {{- range $i, $edu := . }}
+          {{- if $i }}, {{- end }}
+      {
+        "@type": "Organization",
+        "name": {{ $edu.name | jsonify | safeJS }}
+        {{- with $edu.url }}, "url": {{ . | jsonify | safeJS }}{{- end }}
+      }
+        {{- end }}
+    ]
+      {{- end }}
+      {{- with .knowsAbout }}
+    ,"knowsAbout": {{ . | jsonify | safeJS }}
+      {{- end }}
+      {{- with .knowsLanguage }}
+    ,"knowsLanguage": {{ . | jsonify | safeJS }}
+      {{- end }}
+      {{- with .award }}
+    ,"award": {{ . | jsonify | safeJS }}
+      {{- end }}
+      {{- with .email }}
+    ,"email": {{ . | jsonify | safeJS }}
+      {{- end }}
+    {{- end }}
+  }
+}
+</script>
+  {{- else }}
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "BlogPosting",
+  "@type": "Article",
   "headline": {{ .Title | plainify}},
   "name": "{{ .Title | plainify }}",
   "description": {{ with .Description | plainify }}{{ . }}{{ else }}{{ .Summary | plainify  }}{{ end -}},
@@ -130,8 +197,10 @@
   "image": {{ .Permalink }},
     {{- end }}
   {{- end -}}
-  "datePublished": {{ .PublishDate }},
-  "dateModified": {{ .Lastmod }},
+  {{- $articlePub := (.PublishDate | default .Date) -}}
+  {{- $articleMod := (.Lastmod | default $articlePub) -}}
+  "datePublished": {{ $articlePub }},
+  "dateModified": {{ $articleMod }},
   {{- with (.Params.author | default site.Params.author) }}
   "author":
     {{- if (or (eq (printf "%T" .) "[]string") (eq (printf "%T" .) "[]interface {}")) -}}
@@ -163,6 +232,7 @@
   }
 }
 </script>
+  {{- end }}
 {{- end }}{{/* .IsPage end */}}
 
 {{- end -}}
