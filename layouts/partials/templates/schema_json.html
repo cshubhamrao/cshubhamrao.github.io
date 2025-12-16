@@ -3,10 +3,11 @@
 {
   {{- $publisherType := ( site.Params.schema.publisherType | default "Organization") -}}
   {{- $personConfig := site.Params.schema.person -}}
+  {{- $primaryURL := cond (and $personConfig $personConfig.url) $personConfig.url site.Home.Permalink -}}
   "@context": "https://schema.org",
   "@type": "{{- $publisherType | title -}}",
   "name": {{ site.Title }},
-  "url": {{ site.Home.Permalink }},
+  "url": {{ $primaryURL | absURL }},
   "description": {{ site.Params.description | plainify | truncate 180 | safeHTML }},
   {{- if (eq $publisherType "Person") }}
   {{- $personImage := (or $personConfig.image site.Params.profileMode.imageUrl (site.Params.assets.favicon | default "favicon.ico")) -}}
@@ -55,9 +56,6 @@
     {{- end }}
     {{- with .email }}
   ,"email": {{ . | jsonify | safeJS }}
-    {{- end }}
-    {{- with .url }}
-  ,"url": {{ . | jsonify | safeJS }}
     {{- end }}
   {{- end }}
 }
