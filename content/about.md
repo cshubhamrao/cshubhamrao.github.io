@@ -1,6 +1,6 @@
 ---
 title: "About Me"
-description: "Engineering Team Lead and Systems Architect specializing in MLOps infrastructure."
+description: "Senior Software Engineer building platform backends: APIs, infra, and reliability."
 date: 2024-12-15
 draft: false
 showToc: true
@@ -9,9 +9,14 @@ TocOpen: true
 
 Hey! I'm Shubham — a Software Engineer who builds the backend for your backends. APIs, infrastructure, the stuff that sits behind the stuff users actually see. I've spent the last few years deep in MLOps and platform engineering, building systems that serve **100M+ tokens a day** without catching fire.
 
-I've had the chance to speak at **DevOpsDays Bengaluru 2023** (because apparently I have opinions about API gateways now), and once won a hackathon by building a blockchain thing before it was cool.
+I like systems where **failure is a first-class feature**: idempotency, retries, backpressure, graceful degradation, boring rollouts.
+I'm happiest when a graph goes down because we fixed it, not because we hid it.
 
-Currently obsessed with: Go garbage collection tuning, making Kubernetes controllers boring, and shaving milliseconds off inference latency.
+I've had the chance to speak at **DevOpsDays Bengaluru 2023** (because apparently I have opinions about API gateways now), and once won a hackathon by building a blockchain thing when it was still embarrassing. Also did a semester at **UC Berkeley's Sutardja Center**, soaking up the Silicon Valley chaos.
+
+Currently obsessed with: Go garbage collection tuning, making Kubernetes controllers boring, shaving milliseconds off inference latency, and turning real-world mess into reliable systems.
+
+**Bio (short version):** I bridge AI research and production-scale systems. I talk about API gateways at conferences, design inference platforms that sling tokens at scale, and still get a kick out of hacking on protocol compilers. Community builder, systems tinkerer, and your friendly neighborhood latency slayer.
 
 ---
 
@@ -21,8 +26,9 @@ Currently obsessed with: Go garbage collection tuning, making Kubernetes control
 
 **Senior Software Engineer, Core (Platform)** — *2025–Present*
 
-- Designing and architecting backend systems in **TypeScript** for the core backend team.
-- More to come — just getting started here!
+- Building core backend services in **TypeScript** for platform workflows and data APIs.
+- Getting a front-row seat to supply chain reality: messy inputs, real-world constraints, and a lot of "it depends".
+- Design focus: correctness under change, evolvable schemas, and operational clarity (alerts that mean something).
 
 ### @ Tune AI (formerly NimbleBox.ai)
 
@@ -41,21 +47,19 @@ Currently obsessed with: Go garbage collection tuning, making Kubernetes control
 
 A mix of things I've built, fixed, or accidentally broke:
 
-- **Colbert AI** — My dive into language models. v1 was Markov chains, v2 was GPT-2 (345M). I was into LLMs way before ChatGPT was a thing. 😎
+- **Colbert AI** — GPT-2 (345M) fine-tuning to mimic Stephen Colbert's monologue voice using 500+ transcripts. Was doing LLM hijinks before it was fashionable. 😎
+- **proto-opt-parse** — Runtime parsing of Protobuf descriptor options in Go. Built to make gRPC tooling less guessy.
+- **docker-hub-data** — Data-X project at UC Berkeley: end-to-end pipeline to collect and analyze Docker Hub usage stats.
 - **ovms-serving** — OpenVINO Model Server tooling for inference workloads.
 - **k8s-dashboard fix** — Contributed a fix to the Kubernetes Dashboard. It was bugging me.
-- **proto-opt-parse** — Protobuf option parsing utilities for Go. Because sometimes you need to dig into descriptor options.
 - Also found a bug in the Go compiler's release note item's functionality. No big deal.
 
 ---
 
-## Speaking
+## Notes, Talks, and Other Escapes
 
-### DevOpsDays Bengaluru 2023
-**Topic:** *Journey to using APISIX as a Reverse Proxy*
-*October 2023 • Co-presented with Vinuja Khatode*
-
-Talked about why we ditched Nginx defaults and migrated to **Apache APISIX** for our high-volume inference traffic. On-demand authorization, dynamic routing, better observability, and fewer 3am pages. Worth it.
+- **DevOpsDays Bengaluru 2023:** APISIX as reverse proxy for high-volume inference traffic. Co-presented with Vinuja Khatode.
+- **Visiting Scholar, UC Berkeley SCET (2019):** Crashed the Data-X program on a $20K scholarship, built Docker Hub analytics pipelines, and hopped between hackathons and collider cups.
 
 ---
 
@@ -72,14 +76,10 @@ Ran tutorials for CS courses, built grading scripts in Python (because I'm lazy)
 
 ---
 
-## The Trophy Shelf
+## Honors & Awards
 
 ### Winner, IIIT-Delhi HACKIIITD (2017)
-**1st place out of 800+ teams**. Built *"Reliability of Media"* — a blockchain-based consensus mechanism to combat misinformation. Yes, blockchain. It was 2017, don't judge.
-
-### UC Berkeley (SCET) — Spring 2019
-Convinced my uni to give me a **$20,000 scholarship**, who then convinced UC Berkeley to let me hang out for a semester. Got selected for the **Data-X program** and built data pipelines for the **docker-hub-data** project.
-
+**1st place out of 800+ teams**. Built *"Reliability of Media"* — a blockchain-based consensus mechanism to combat misinformation. Incentivized honest votes with crypto rewards and locked consensus on-chain. Yes, blockchain. It was 2017, don't judge.
 ### Other Wins
 - **Google Cloud Associate Cloud Engineer** (Valid until 2026)
 - **President's Placement Award** from SRM University
@@ -91,7 +91,7 @@ Convinced my uni to give me a **$20,000 scholarship**, who then convinced UC Ber
 
 | | |
 |---|---|
-| **Daily Drivers** | **Go** (system architecture, tooling), **Python** (MLOps, scripts) |
+| **Daily Drivers** | **Go** (system architecture, tooling), **Python** (MLOps, scripts), **TypeScript** (platform services) |
 | **Infrastructure** | Kubernetes, Docker, AWS, GCP, Apache APISIX |
 | **Data Stuff** | Kafka, RabbitMQ, PostgreSQL, Redis |
 | **Observability** | OpenTelemetry, distributed tracing, structured logging |
