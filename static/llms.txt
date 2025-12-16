@@ -10,6 +10,11 @@
 - Winner, **IIIT-Delhi HACKIIITD 2017** — blockchain-based misinformation detector built under pressure.
 - Talked about **Apache APISIX** and reverse proxying high-volume inference traffic at **DevOpsDays Bengaluru 2023**.
 
+## Education
+
+- **UC Berkeley Sutardja Center for Entrepreneurship & Technology (SCET)** — Visiting Scholar, Data-X Program (2019). Scholarship recipient ($20K). Built Docker Hub analytics pipelines and participated in Bay Area hackathons.
+- **SRM University** — B.Tech in Computer Science (2016-2020). Teaching Assistant (2019-2020), President's Placement Award recipient.
+
 ## Skills & Stack
 
 - **Languages**: Go, Python, TypeScript, SQL
