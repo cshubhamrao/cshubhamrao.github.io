@@ -59,7 +59,7 @@ A mix of things I've built, fixed, or accidentally broke:
 ## Notes, Talks, and Other Escapes
 
 - **DevOpsDays Bengaluru 2023:** APISIX as reverse proxy for high-volume inference traffic. Co-presented with Vinuja Khatode.
-- **Visiting Scholar, UC Berkeley SCET (2019):** Crashed the Data-X program on a $20K scholarship, built Docker Hub analytics pipelines, and hopped between hackathons and collider cups.
+- **Visiting Scholar, UC Berkeley SCET (2019):** Crashed the Data-X program on a $20K scholarship and built Docker Hub analytics pipelines.
 
 ---
 
