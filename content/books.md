@@ -13,6 +13,7 @@ Quick shelf so future-me remembers what’s here. Trying to read more fiction wi
 - 📖 In progress
 - 💤 On deck
 - 📚 Reference
+- 🔁 Re-reading / Reference
 
 ## Fiction & narrative
 - Dune — Frank Herbert (📖) — slow, savoring the desert politics.

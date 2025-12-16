@@ -12,7 +12,7 @@ Hey! I'm Shubham — a Software Engineer who builds the backend for your backend
 I like systems where **failure is a first-class feature**: idempotency, retries, backpressure, graceful degradation, boring rollouts.
 I'm happiest when a graph goes down because we fixed it, not because we hid it.
 
-I've had the chance to speak at **DevOpsDays Bengaluru 2023** (because apparently I have opinions about API gateways now), and once won a hackathon by building a blockchain thing when it was still embarrassing. Also did a semester at **UC Berkeley's Sutardja Center**, soaking up the Silicon Valley chaos.
+I've had the chance to speak at **DevOpsDays Bengaluru 2023** (because apparently I have opinions about API gateways now), and once won a hackathon by building a blockchain thing before it was cool. Also did a semester at **UC Berkeley's Sutardja Center**, soaking up the Silicon Valley chaos.
 
 Currently obsessed with: Go garbage collection tuning, making Kubernetes controllers boring, shaving milliseconds off inference latency, and turning real-world mess into reliable systems.
 
