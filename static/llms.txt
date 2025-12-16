@@ -6,9 +6,14 @@
 
 - Senior SWE, Core Platform @ **Lyric.tech** — TypeScript services for supply-chain workflows and data APIs.
 - Previously at **Tune AI (NimbleBox.ai)** — designed a gRPC backbone that serves **100M+ tokens/day**, trimmed latency by **40%**, and led OpenTelemetry adoption.
-- Visiting student at **UC Berkeley SCET (Data-X)** on a scholarship; built Docker Hub analytics pipelines and hit Bay Area hackathons.
+- Visiting scholar at **UC Berkeley SCET** on scholarship; studied at **SRM University**.
 - Winner, **IIIT-Delhi HACKIIITD 2017** — blockchain-based misinformation detector built under pressure.
 - Talked about **Apache APISIX** and reverse proxying high-volume inference traffic at **DevOpsDays Bengaluru 2023**.
+
+## Education
+
+- **UC Berkeley Sutardja Center for Entrepreneurship & Technology (SCET)** — Visiting Scholar, Data-X Program (2019). Scholarship recipient ($20K). Built Docker Hub analytics pipelines and participated in Bay Area hackathons.
+- **SRM University** — B.Tech in Computer Science (2017-2021). Teaching Assistant (2019-2020), President's Placement Award recipient.
 
 ## Skills & Stack
 
