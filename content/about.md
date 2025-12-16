@@ -102,6 +102,10 @@ Ran tutorials for CS courses, built grading scripts in Python (because I'm lazy)
 
 Building something interesting? I'm always up for a conversation about distributed systems, backend architecture, or why gRPC is underrated.
 
+## Reading List
+
+Trying to keep tabs on what I'm reading? I keep a running log on the [Books page](/books/).
+
 - **Email:** [contact@cshubhamrao.dev](mailto:contact@cshubhamrao.dev)
 - **GitHub:** [cshubhamrao](https://github.com/cshubhamrao)
 - **LinkedIn:** [cshubhamrao](https://www.linkedin.com/in/cshubhamrao/)

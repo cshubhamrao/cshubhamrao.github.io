@@ -62,6 +62,39 @@ params:
     icon: /apple-touch-icon.png
     iconHeight: 35
 
+  schema:
+    publisherType: Person
+    sameAs:
+      - "https://github.com/cshubhamrao/"
+      - "https://www.linkedin.com/in/cshubhamrao/"
+      - "https://twitter.com/cshubhamrao/"
+      - "mailto:contact@cshubhamrao.dev"
+    person:
+      jobTitle: "Senior Software Engineer, Core Platform"
+      worksFor:
+        name: "Lyric.tech"
+        url: "https://www.lyric.tech/"
+      alumniOf:
+        - name: "UC Berkeley Sutardja Center for Entrepreneurship & Technology"
+          url: "https://scet.berkeley.edu/"
+        - name: "SRM University, AP"
+          url: "https://www.srmap.edu.in/"
+      knowsAbout:
+        - Distributed Systems
+        - Platform Engineering
+        - Observability
+        - Generative AI Infrastructure
+      knowsLanguage:
+        - English
+        - Hindi
+        - Telugu
+      award:
+        - "Winner, IIIT-Delhi HACKIIITD 2017"
+        - "Google Cloud Associate Cloud Engineer"
+      email: "mailto:contact@cshubhamrao.dev"
+      url: "https://cshubhamrao.dev/about/"
+      image: "/logo.jpg"
+
   # Profile Mode for portfolio homepage
   profileMode:
     enabled: true
@@ -102,6 +135,18 @@ menu:
 
 outputs:
   home:
+    - HTML
+    - RSS
+    - Sitemap
+  section:
+    - HTML
+    - RSS
+  page:
+    - HTML
+  taxonomy:
+    - HTML
+    - RSS
+  term:
     - HTML
     - RSS
 
