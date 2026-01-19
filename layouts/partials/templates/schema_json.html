@@ -220,28 +220,8 @@
       "email": {{ .email | jsonify | safeJS }},
       "contactType": {{ .contactType | jsonify | safeJS }},
       "availableLanguage": {{ .availableLanguage | jsonify | safeJS }}
-    },
+    }
     {{- end }}
-    "interactionStatistic": [
-      {{- if site.Params.schema.sameAs }}
-        {{- $socialLinks := dict "github.com" "GitHub Profile" "linkedin.com" "LinkedIn Profile" "twitter.com" "Twitter Profile" -}}
-        {{- range $i, $url := site.Params.schema.sameAs }}
-          {{- if not (hasPrefix $url "mailto:") }}
-            {{- if $i }}, {{- end }}
-      {
-        "@type": "InteractionCounter",
-        "interactionType": "https://schema.org/FollowAction",
-        {{- range $domain, $label := $socialLinks }}
-          {{- if (findRE $domain $url) }}
-        "userInteractionCount": {{ $label | jsonify | safeJS }},
-          {{- end }}
-        {{- end }}
-        "url": {{ trim $url " " | jsonify | safeJS }}
-      }
-          {{- end }}
-        {{- end }}
-      {{- end }}
-    ]
     {{- with $personConfig.performerIn }}
     ,"performerIn": [
       {{- range $i, $event := . }}
@@ -252,7 +232,16 @@
         "description": {{ $event.description | jsonify | safeJS }},
         "startDate": {{ $event.startDate | jsonify | safeJS }},
         "eventStatus": "https://schema.org/EventScheduled",
-        "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode"
+        "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+        "location": {
+          "@type": "Place",
+          "name": {{ $event.location | default "Bengaluru, India" | jsonify | safeJS }},
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": {{ $event.city | default "Bengaluru" | jsonify | safeJS }},
+            "addressCountry": {{ $event.country | default "IN" | jsonify | safeJS }}
+          }
+        }
       }
       {{- end }}
     ]
