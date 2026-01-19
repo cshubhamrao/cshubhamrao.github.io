@@ -194,6 +194,10 @@ menu:
       name: About
       url: /about/
       weight: 10
+    - identifier: books
+      name: Books
+      url: /books/
+      weight: 20
 
 outputs:
   home:

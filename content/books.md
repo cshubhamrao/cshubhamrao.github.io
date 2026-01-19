@@ -2,10 +2,13 @@
 title: "Books"
 description: "Quick shelf notes. No reviews."
 date: 2024-12-15
-lastmod: 2025-01-20
+lastmod: 2026-01-19
 draft: false
 showToc: true
 TocOpen: true
+sitemap:
+  changefreq: monthly
+  priority: 0.8
 ---
 
 Quick shelf so future-me remembers what’s here. Trying to read more fiction without turning this into a review blog.
