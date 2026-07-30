@@ -57,7 +57,7 @@ A mix of things I've built, fixed, or accidentally broke:
 - [**aws-sso-check**](https://github.com/cshubhamrao/aws-sso-check) — *maintained CLI.* AWS SSO expiry notifier, rewritten from shell to Swift to Go.
 - [**golang/go#71738**](https://github.com/golang/go/issues/71738) — *upstream issue.* Pseudo-version stamping in `cmd/go` doesn't work for a module in a subdirectory. Found it the way you find these things: by not believing a version number.
 - [**Kubernetes Dashboard #7093**](https://github.com/kubernetes-retired/dashboard/pull/7093) — *merged upstream.* Found the pod page crashing on generic ephemeral volumes, [filed it](https://github.com/kubernetes-retired/dashboard/issues/7080), then fixed it myself. It was bugging me.
-- [**Colbert AI**](https://x.com/DeepColbert) — *archived experiment, still posting.* GPT-2 (345M) fine-tuning to mimic Stephen Colbert's monologue voice using 500+ transcripts. Was doing LLM hijinks before it was fashionable. 😎
+- [**Colbert AI**](https://github.com/NextTechLabAP/Colbert-AI) — *team project at Next Tech Lab, built with two others.* GPT-2 (345M) fine-tuned on 500+ transcripts to mimic Stephen Colbert's monologue voice. Still [posting](https://x.com/DeepColbert). Was doing LLM hijinks before it was fashionable. 😎
 
 ---
 

@@ -51,8 +51,9 @@ this file, this file is current.
   descriptor-option parsing for Go tooling.
 - [aws-sso-check](https://github.com/cshubhamrao/aws-sso-check) — AWS SSO expiry
   notifier; shell → Swift → Go, with a private patch overlay.
-- [Colbert AI](https://x.com/DeepColbert) — GPT-2 fine-tuned on 500+ monologue
-  transcripts, posting as a bot. LLM hijinks, early.
+- [Colbert AI](https://github.com/NextTechLabAP/Colbert-AI) — GPT-2 fine-tuned on 500+
+  monologue transcripts; a team project at Next Tech Lab, still posting as
+  [@DeepColbert](https://x.com/DeepColbert). LLM hijinks, early.
 - Upstream: [Kubernetes Dashboard #7093](https://github.com/kubernetes-retired/dashboard/pull/7093)
   — reported and fixed a crash on generic ephemeral volumes;
   [golang/go#71738](https://github.com/golang/go/issues/71738) — pseudo-version
