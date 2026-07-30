@@ -6,7 +6,7 @@
   {{- $primaryURL := cond (and $personConfig $personConfig.url) $personConfig.url site.Home.Permalink -}}
   "@context": "https://schema.org",
   "@type": "{{- $publisherType | title -}}",
-  "name": {{ site.Title }},
+  "name": {{ site.Params.schema.person.name | default site.Title }},
   "url": {{ $primaryURL | absURL }},
   "description": {{ site.Params.description | plainify | truncate 180 | safeHTML }},
   {{- if (eq $publisherType "Person") }}
@@ -118,7 +118,7 @@
     "@context": "https://schema.org",
     "@type": "Person",
     "@id": {{ printf "%s/#person" $primaryURL | absURL | jsonify | safeJS }},
-    "name": {{ site.Title | jsonify | safeJS }},
+    "name": {{ site.Params.schema.person.name | default site.Title | jsonify | safeJS }},
     {{- with $personConfig.alternateName }}
     "alternateName": {{ . | jsonify | safeJS }},
     {{- end }}
@@ -319,7 +319,7 @@
   },
   "publisher": {
     "@type": "{{- ( site.Params.schema.publisherType | default "Organization") | title -}}",
-    "name": {{ site.Title }},
+    "name": {{ site.Params.schema.person.name | default site.Title }},
     "logo": {
       "@type": "ImageObject",
       "url": {{ site.Params.assets.favicon | default "favicon.ico" | absURL }}

@@ -1,5 +1,9 @@
 baseURL: "https://cshubhamrao.dev"
-title: Shubham Rao
+# Used as the <title> of the homepage and as the suffix on every other page.
+# "Shubham Rao" alone ranked ~6 among namesakes with 1.66% CTR: searchers had no way
+# to tell which Shubham Rao this is. The person's name for structured data is set
+# separately at params.schema.person.name.
+title: Shubham Rao — Backend & Platform Engineer
 theme: PaperMod
 
 pagination:
@@ -62,11 +66,14 @@ params:
     icon: /apple-touch-icon.png
     iconHeight: 35
 
-  # Renders inside <footer>, between the copyright and the "Powered by" line.
-  # A real anchor to llms.txt, so agents that only follow links they have seen can
-  # reach it. See layouts/partials/extend_head.html for the machine-readable pair.
+  # Renders inside <footer>. The theme's default copyright line prints site.Title,
+  # which now carries the SEO descriptor and reads badly in a footer, so it is off and
+  # the credit is written here instead. The llms.txt anchor is a real link so agents
+  # that only follow URLs they have seen can reach it — see
+  # layouts/partials/extend_head.html for the machine-readable pair.
   footer:
-    text: "[llms.txt](/llms.txt)"
+    hideCopyright: true
+    text: "© [Shubham Rao](/) · [llms.txt](/llms.txt)"
 
   schema:
     publisherType: Person
@@ -76,6 +83,9 @@ params:
       - "https://twitter.com/cshubhamrao/"
       - "mailto:contact@cshubhamrao.dev"
     person:
+      # The person's actual name, kept apart from site.Title so the SEO title can
+      # carry a descriptor without corrupting schema.org Person.name.
+      name: "Shubham Rao"
       alternateName: "cshubhamrao"
       description: "Senior Software Engineer building the systems other systems depend on: control planes, APIs, workflow engines, and entity reconciliation. I put correctness into the schema, so a mistake is hard to ship in the first place."
       jobTitle: "Senior Software Engineer, Core (Platform)"
