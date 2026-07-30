@@ -61,8 +61,8 @@ this file, this file is current.
 
 ## Talks and honors
 
-- **DevOpsDays Bengaluru 2023** — Apache APISIX as a reverse proxy for high-volume
-  inference traffic (co-presented).
+- **[DevOpsDays Bengaluru 2023](https://x.com/devopsdays_blr/status/1715647171276820682)** — Apache APISIX as a reverse proxy for
+  high-volume inference traffic (co-presented).
 - **Winner, HACKIIITD 2017** (IIIT-Delhi) — 1st of 800+ teams; blockchain-based
   consensus against misinformation.
 - Google Cloud Associate Cloud Engineer. President's Placement Award, SRM University.
