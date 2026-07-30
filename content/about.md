@@ -52,43 +52,29 @@ The arc says more than the title does: ML scripts → services I owned end to en
 
 A mix of things I've built, fixed, or accidentally broke:
 
-- **cloud-credit-system** — credit accounting on TigerBeetle and Temporal. Idempotent by construction: replay a request and the ledger refuses to charge twice.
-- **proto-opt-parse** — Runtime parsing of Protobuf descriptor options in Go. Built to make gRPC tooling less guessy.
-- **aws-sso-check** — AWS SSO expiry notifier, rewritten from shell to Swift to Go.
-- **Colbert AI** — GPT-2 (345M) fine-tuning to mimic Stephen Colbert's monologue voice using 500+ transcripts. Was doing LLM hijinks before it was fashionable. 😎
-- **k8s-dashboard fix** — Contributed a fix to the Kubernetes Dashboard. It was bugging me.
-- Also found a bug in the Go compiler's release note item's functionality. No big deal.
+- [**cloud-credit-system**](https://github.com/cshubhamrao/cloud-credit-system) — *architecture experiment.* Credit accounting on TigerBeetle and Temporal. Idempotent by construction: replay a request and the ledger refuses to charge twice.
+- [**proto-opt-parse**](https://github.com/cshubhamrao/proto-opt-parse) — *Go package.* Runtime parsing of Protobuf descriptor options. Built to make gRPC tooling less guessy.
+- [**aws-sso-check**](https://github.com/cshubhamrao/aws-sso-check) — *maintained CLI.* AWS SSO expiry notifier, rewritten from shell to Swift to Go.
+- [**golang/go#71738**](https://github.com/golang/go/issues/71738) — *upstream issue.* Pseudo-version stamping in `cmd/go` doesn't work for a module in a subdirectory. Found it the way you find these things: by not believing a version number.
+- [**Kubernetes Dashboard #7093**](https://github.com/kubernetes-retired/dashboard/pull/7093) — *merged upstream.* Found the pod page crashing on generic ephemeral volumes, [filed it](https://github.com/kubernetes-retired/dashboard/issues/7080), then fixed it myself. It was bugging me.
+- [**Colbert AI**](https://x.com/DeepColbert) — *archived experiment, still posting.* GPT-2 (345M) fine-tuning to mimic Stephen Colbert's monologue voice using 500+ transcripts. Was doing LLM hijinks before it was fashionable. 😎
 
 ---
 
 ## Notes, Talks, and Other Escapes
 
 - **DevOpsDays Bengaluru 2023:** APISIX as reverse proxy for high-volume inference traffic. Co-presented with Vinuja Khatode.
-- **Visiting Scholar, UC Berkeley SCET (2019):** Crashed the Data-X program on a $20K scholarship and built Docker Hub analytics pipelines.
+- **Visiting Scholar, [UC Berkeley SCET](https://scet.berkeley.edu/) (2019):** Crashed the Data-X program on a $20K scholarship and built Docker Hub analytics pipelines.
 
 ---
 
-## Back in College
+## Earlier
 
-### Next Tech Lab AP — *Board Member*
-Helped scale from a scrappy group of **<20 people to 150+ members**. Lots of recruiting, mentoring, and figuring out how to build a culture around exploring cool stuff.
-
-### ACM Student Chapter — *Founding Member*
-Started the chapter from scratch and grew it to **200+ members**. Organized workshops, hack nights, and way too many pizza-fueled coding sessions.
-
-### Teaching Assistant — *SRM University (2019–2020)*
-Ran tutorials for CS courses, built grading scripts in Python (because I'm lazy), and helped students debug their first tracebacks. Ensured a generation of students didn't quit Python. You're welcome.
-
----
-
-## Honors & Awards
-
-### Winner, IIIT-Delhi HACKIIITD (2017)
-**1st place out of 800+ teams**. Built *"Reliability of Media"* — a blockchain-based consensus mechanism to combat misinformation. Incentivized honest votes with crypto rewards and locked consensus on-chain. Yes, blockchain. It was 2017, don't judge.
-### Other Wins
-- **Google Cloud Associate Cloud Engineer** (Valid until 2026)
-- **President's Placement Award** from SRM University
-- **Grand Finalist** — TCS IT Wiz 2013 (ask me tech trivia)
+- **Next Tech Lab AP**, Board Member — helped scale it from fewer than 20 people to **150+ members**.
+- **ACM Student Chapter**, Founding Member — started it from scratch, grew it to **200+ members**.
+- **Teaching Assistant**, SRM University (2019–2020) — ran CS tutorials, built Python grading tools, and helped a lot of people through their first traceback.
+- **Winner, IIIT-Delhi HACKIIITD 2017** — 1st of **800+ teams**, for a blockchain-based consensus mechanism against misinformation. Yes, blockchain. It was 2017, don't judge.
+- **Google Cloud Associate Cloud Engineer** · **President's Placement Award**, SRM University · **Grand Finalist**, TCS IT Wiz 2013.
 
 ---
 
@@ -106,11 +92,11 @@ Ran tutorials for CS courses, built grading scripts in Python (because I'm lazy)
 
 ## Let's Talk
 
-Building something interesting? I'm always up for a conversation about distributed systems, backend architecture, or why gRPC is underrated.
+I'm happy to talk about platform architecture, workflow systems, Go infrastructure, conference talks, and technically interesting backend roles. Currently employed and not looking, but open to speaking invitations and open-source collaboration. I usually reply within a week.
 
-## Reading List
+## Reading
 
-Trying to keep tabs on what I'm reading? I keep a running log on the [Books page](/books/).
+I keep a running shelf log on the [Reading page](/books/).
 
 - **Email:** [contact@cshubhamrao.dev](mailto:contact@cshubhamrao.dev)
 - **GitHub:** [cshubhamrao](https://github.com/cshubhamrao)

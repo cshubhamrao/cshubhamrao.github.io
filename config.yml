@@ -31,7 +31,6 @@ params:
   env: production  # Enables OpenGraph, Twitter Cards, Schema.org
   title: Shubham Rao
   description: "Backend and platform engineer. I build the systems other systems depend on: control planes, APIs, workflow engines, and the correctness mechanisms that keep them dependable."
-  keywords: [Backend Engineer, Platform Engineer, Control Planes, Distributed Systems, Kubernetes, gRPC, Golang, Python, Software Engineer]
   author: Shubham Rao
   images: ["/og-image.png"]
   DateFormat: "January 2006"
@@ -210,8 +209,10 @@ menu:
       name: About
       url: /about/
       weight: 10
+    # Label only. The URL stays /books/ so an indexed page does not become a redirect
+    # for a cosmetic rename.
     - identifier: books
-      name: Books
+      name: Reading
       url: /books/
       weight: 20
 

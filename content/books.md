@@ -1,11 +1,12 @@
 ---
-title: "Books"
+title: "Reading"
 description: "Quick shelf notes. No reviews."
 date: 2024-12-15
-lastmod: 2026-01-19
+lastmod: 2026-07-30
 draft: false
-showToc: true
-TocOpen: true
+# Four short sections do not need a table of contents; the TOC was taller than the
+# content it indexed.
+showToc: false
 sitemap:
   changefreq: monthly
   priority: 0.8
