@@ -1,34 +1,64 @@
 # Shubham Rao — cshubhamrao.dev
 
-> Senior Software Engineer building platform backends: APIs, infrastructure, reliability.
+> I build the systems your systems depend on: control planes, workflow engines, entity
+> reconciliation, and the correctness mechanisms that keep them dependable. It's my job
+> and my passion, and the passion came first.
 
-## Snapshot
+Last updated: 2026-07. Based in India.
 
-- Senior SWE, Core Platform @ **Lyric.tech** — TypeScript services for supply-chain workflows and data APIs.
-- Previously at **Tune AI (NimbleBox.ai)** — designed a gRPC backbone that serves **100M+ tokens/day**, trimmed latency by **40%**, and led OpenTelemetry adoption.
-- Visiting scholar at **UC Berkeley SCET** on scholarship; studied at **SRM University**.
-- Winner, **IIIT-Delhi HACKIIITD 2017** — blockchain-based misinformation detector built under pressure.
-- Talked about **Apache APISIX** and reverse proxying high-volume inference traffic at **DevOpsDays Bengaluru 2023**.
+## What I actually do
 
-## Education
+- **Control planes and the glue between systems** — Kubernetes operators and CRDs, gRPC
+  schemas, metering, observability, build and release. This has been the constant
+  subject across every role.
+- **I make mistakes impossible, not just unlikely** — authorization rules live in the
+  schema, so an endpoint cannot ship unprotected. Retries are safe to repeat. When I
+  fix a bug, I add the test that keeps the whole class of it out.
+- **I work with LLM-generated code and review it properly** — specs kept short enough
+  to stay true, invariants written down and tested, design critiques kept on record.
 
-- **UC Berkeley Sutardja Center for Entrepreneurship & Technology (SCET)** — Visiting Scholar, Data-X Program (2019). Scholarship recipient ($20K). Built Docker Hub analytics pipelines and participated in Bay Area hackathons.
-- **SRM University** — B.Tech in Computer Science (2017-2021). Teaching Assistant (2019-2020), President's Placement Award recipient.
+## Now
 
-## Skills & Stack
+- Senior Software Engineer, Core Platform @ **Lyric.tech** (2025–present) — Python and
+  TypeScript services: entity reconciliation, workflow DSLs, Temporal workflows,
+  ConnectRPC, and platform and data APIs for supply-chain workflows.
 
-- **Languages**: Go, Python, TypeScript, SQL
-- **Backend**: gRPC + Protocol Buffers, REST/FastAPI, Apache APISIX
-- **Infrastructure**: Kubernetes, Docker, AWS, GCP, Kafka, RabbitMQ
+## Previously
+
+- **Tune AI / NimbleBox.ai** (2020–2025, to shutdown) — ML-infrastructure platform.
+  Arc: ML scripts → owned services → the Go control plane, operator and IaC → shared
+  platform libraries → in-process frameworks with written design rationale. Led
+  OpenTelemetry adoption; gRPC model-serving backbone at 100M+ tokens/day.
+- **UC Berkeley SCET** — Visiting Scholar (2019), scholarship recipient ($20K).
+- **SRM University** — B.Tech in Computer Science (2017–2021). Teaching Assistant.
+
+## Stack
+
+- **Languages**: Go, Python, TypeScript, Rust (hobby), SQL
+- **Backend**: gRPC + protobuf (incl. custom options), ConnectRPC + buf, FastAPI,
+  Apache APISIX, Temporal, TigerBeetle
+- **Infrastructure**: Kubernetes (operators/CRDs, Kubebuilder), Docker, AWS, GCP,
+  Terraform, Pulumi, Kafka, RabbitMQ, PostgreSQL, Redis
 - **Observability**: OpenTelemetry, distributed tracing, structured logging
 
 ## Projects
 
-- **Colbert AI** — GPT-2 satire bot trained on 500+ monologues.
-- **proto-opt-parse** — Protobuf option parsing at runtime for Go tooling.
-- **docker-hub-data** — Data-X project collecting and analyzing Docker Hub usage.
-- **ovms-serving** — OpenVINO Model Server utilities for inference workloads.
-- **k8s-dashboard fix** — Upstream contribution to Kubernetes Dashboard.
+- [cloud-credit-system](https://github.com/cshubhamrao/cloud-credit-system) — credit
+  accounting on TigerBeetle + Temporal; idempotent by construction.
+- [proto-opt-parse](https://github.com/cshubhamrao/proto-opt-parse) — runtime protobuf
+  descriptor-option parsing for Go tooling.
+- [aws-sso-check](https://github.com/cshubhamrao/aws-sso-check) — AWS SSO expiry
+  notifier; shell → Swift → Go, with a private patch overlay.
+- **Colbert AI** — GPT-2 fine-tuned on 500+ monologue transcripts. LLM hijinks, early.
+- Upstream: a fix to Kubernetes Dashboard; an issue in Go's release-note tooling.
+
+## Talks and honors
+
+- **DevOpsDays Bengaluru 2023** — Apache APISIX as a reverse proxy for high-volume
+  inference traffic (co-presented).
+- **Winner, HACKIIITD 2017** (IIIT-Delhi) — 1st of 800+ teams; blockchain-based
+  consensus against misinformation.
+- Google Cloud Associate Cloud Engineer. President's Placement Award, SRM University.
 
 ## Contact
 
@@ -36,3 +66,8 @@
 - GitHub: https://github.com/cshubhamrao
 - LinkedIn: https://www.linkedin.com/in/cshubhamrao
 - Website: https://cshubhamrao.dev
+
+## Optional
+
+- [About](https://cshubhamrao.dev/about/) — long-form background.
+- [Books](https://cshubhamrao.dev/books/) — running reading log.

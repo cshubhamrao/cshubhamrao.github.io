@@ -26,8 +26,8 @@ languages:
 params:
   env: production  # Enables OpenGraph, Twitter Cards, Schema.org
   title: Shubham Rao
-  description: "Backend Specialist with expertise in Golang and Python. Building high-throughput APIs and distributed systems."
-  keywords: [Backend Engineer, Golang, Python, Machine Learning, AI, Software Engineer]
+  description: "Backend and platform engineer. I build the systems other systems depend on: control planes, APIs, workflow engines, and the correctness mechanisms that keep them dependable."
+  keywords: [Backend Engineer, Platform Engineer, Control Planes, Distributed Systems, Kubernetes, gRPC, Golang, Python, Software Engineer]
   author: Shubham Rao
   images: ["/og-image.png"]
   DateFormat: "January 2006"
@@ -71,7 +71,7 @@ params:
       - "mailto:contact@cshubhamrao.dev"
     person:
       alternateName: "cshubhamrao"
-      description: "Senior Software Engineer building platform backends: APIs, infra, and reliability. I bridge AI research and production-scale systems, designing inference platforms that sling tokens at scale."
+      description: "Senior Software Engineer building the systems other systems depend on: control planes, APIs, workflow engines, and entity reconciliation. I put correctness into the schema, so a mistake is hard to ship in the first place."
       jobTitle: "Senior Software Engineer, Core (Platform)"
       worksFor:
         name: "Lyric.tech"
@@ -117,7 +117,7 @@ params:
       hasOccupation:
         name: "Senior Software Engineer"
         occupationalCategory: "15-1252.00"
-        description: "Building core backend services and platform infrastructure. Specializing in distributed systems, MLOps, and high-scale API architecture."
+        description: "Building core backend services and platform infrastructure. Specializing in control planes, workflow orchestration, entity reconciliation, and schema-carried correctness."
         skills:
           - Go
           - Python
@@ -162,9 +162,9 @@ params:
     enabled: true
     title: "Shubham Rao"
     subtitle: |
-      I build systems that scale — from 100M+ token APIs to enterprise document pipelines.
+      I build the systems your systems depend on.
 
-      Backend engineer obsessed with Go, Python, and making distributed systems behave.
+      It's my job and my passion, and the passion came first. Control planes, workflow DSLs, entity reconciliation, and schemas that refuse to let you ship a mistake.
     imageUrl: "/logo.jpg"
     imageWidth: 150
     imageHeight: 150
