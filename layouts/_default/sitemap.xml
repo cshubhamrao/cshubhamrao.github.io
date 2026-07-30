@@ -1,7 +1,12 @@
 {{ printf "<?xml version=\"1.0\" encoding=\"utf-8\" standalone=\"yes\"?>" | safeHTML }}
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  {{- range where .Pages "Sitemap.Disable" "ne" true }}
+  {{- /* site.Pages, not .Pages: in the home page's context .Pages excludes the home
+         page itself, which silently kept "/" out of the sitemap. Taxonomy and term
+         pages are filtered out — they are thin or empty listing pages and do not
+         belong in a sitemap. */ -}}
+  {{- $indexable := where site.Pages "Kind" "not in" (slice "taxonomy" "term") }}
+  {{- range where $indexable "Sitemap.Disable" "ne" true }}
     {{- if .Permalink }}
   <url>
     <loc>{{ .Permalink }}</loc>{{ if not .Lastmod.IsZero }}
