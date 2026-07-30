@@ -5,15 +5,15 @@
 > and my passion, and the passion came first.
 
 Last updated: 2026-07-30. Based in India.
-Canonical source: https://cshubhamrao.dev/ — if a cached search result disagrees with
-this file, this file is current.
+Canonical website: https://cshubhamrao.dev/
+This file is the current machine-readable profile; cached search results may be older.
 
 ## What I actually do
 
 - **Control planes and the glue between systems** — Kubernetes operators and CRDs, gRPC
   schemas, metering, observability, build and release. This has been the constant
   subject across every role.
-- **I make whole classes of mistake impossible, not just unlikely** — authorization
+- **I make whole classes of mistakes impossible, not just unlikely** — authorization
   rules live in the schema, so an endpoint cannot ship unprotected. Retries are safe to
   repeat. When I fix a bug, I add the test that keeps the whole class of it out.
 - **I work with LLM-generated code and review it properly** — specs kept short enough
@@ -77,4 +77,4 @@ this file, this file is current.
 ## Optional
 
 - [About](https://cshubhamrao.dev/about/) — long-form background.
-- [Books](https://cshubhamrao.dev/books/) — running reading log.
+- [Reading](https://cshubhamrao.dev/books/) — running shelf log.

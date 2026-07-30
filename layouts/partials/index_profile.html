@@ -70,13 +70,14 @@
       <h3>{{ .title }}</h3>
       {{- with .meta }}<p class="work-meta">{{ . }}</p>{{ end }}
       <p class="work-desc">{{ .description }}</p>
-      {{- with .url }}<a class="work-link" href="{{ . }}" rel="noopener">Source&nbsp;→</a>{{ end }}
+      {{- $label := .linkText | default "Details" }}
+      {{- with .url }}<a class="work-link" href="{{ . }}"{{ if findRE "://" . }} rel="noopener"{{ end }}>{{ $label }}&nbsp;&rarr;</a>{{ end }}
     </li>
     {{- end }}
   </ul>
   <p class="work-more">
-    <a href="/about/">The longer version&nbsp;→</a>
-    <a href="https://github.com/cshubhamrao" rel="noopener me">GitHub&nbsp;→</a>
+    <a href="/about/">The longer version&nbsp;&rarr;</a>
+    <a href="https://github.com/cshubhamrao" rel="noopener me">GitHub&nbsp;&rarr;</a>
   </p>
 </section>
 {{- end }}

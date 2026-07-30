@@ -192,16 +192,19 @@ params:
   # Keep it to three: this is proof that the positioning is real, not a portfolio.
   # Lead with the mechanism; a number is support, never the headline.
   selectedWork:
-    - title: "Platform services"
+    - title: "Supply-chain workflow platform"
       meta: "Lyric · 2025–present"
       description: "Entity reconciliation, workflow DSLs, and the data APIs behind supply-chain workflows. Messy inputs in, stable contracts out."
+      url: "/about/#-lyrictech"
     - title: "Model-serving control plane"
       meta: "Tune AI · Go, gRPC"
       description: "A schema-first gRPC backbone, so clients and servers could evolve without a flag day. It carried 100M tokens a day."
+      url: "/about/#-tune-ai-formerly-nimbleboxai"
     - title: "Credit accounting ledger"
       meta: "Personal · TigerBeetle, Temporal"
       description: "Idempotent by construction: replay a request and the ledger refuses to charge you twice."
       url: "https://github.com/cshubhamrao/cloud-credit-system"
+      linkText: "Source"
 
   socialIcons:
     - name: github

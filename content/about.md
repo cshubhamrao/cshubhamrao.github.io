@@ -5,7 +5,7 @@ date: 2024-12-15
 lastmod: 2026-07-30
 draft: false
 showToc: true
-TocOpen: true
+TocOpen: false
 schemaProfilePage: true
 ---
 
@@ -19,8 +19,6 @@ I've had the chance to speak at **DevOpsDays Bengaluru 2023** (because apparentl
 
 Currently obsessed with: policy as schema data instead of code you have to remember to call, invariants that fail at import time rather than in production, and reviewing generated code at its failure paths — that's where it's thin.
 
-**Bio (short version):** I build the platform layer other engineers build on: control planes, workflow DSLs, entity reconciliation, and schemas that refuse to let you ship a mistake. I talk about API gateways at conferences and still get a kick out of hacking on protocol compilers. Community builder, systems tinkerer, and far too interested in what protobuf descriptors will let you get away with.
-
 ---
 
 ## What I've Built
@@ -31,6 +29,7 @@ Currently obsessed with: policy as schema data instead of code you have to remem
 
 - Core backend services in **Python** and **TypeScript**: entity reconciliation, workflow DSLs, Temporal workflows, and the platform and data APIs behind them.
 - Design focus: correctness under change — evolvable schemas, retries that are safe to repeat, and operational clarity (alerts that mean something).
+- I own core platform surfaces across entity reconciliation, workflow definitions, deterministic execution, and the APIs that turn inconsistent customer data into stable internal contracts.
 - Getting a front-row seat to supply chain reality: messy inputs, real-world constraints, and a lot of "it depends".
 
 ### @ Tune AI (formerly NimbleBox.ai)
@@ -57,7 +56,7 @@ A mix of things I've built, fixed, or accidentally broke:
 - [**aws-sso-check**](https://github.com/cshubhamrao/aws-sso-check) — *maintained CLI.* AWS SSO expiry notifier, rewritten from shell to Swift to Go.
 - [**golang/go#71738**](https://github.com/golang/go/issues/71738) — *upstream issue.* Pseudo-version stamping in `cmd/go` doesn't work for a module in a subdirectory. Found it the way you find these things: by not believing a version number.
 - [**Kubernetes Dashboard #7093**](https://github.com/kubernetes-retired/dashboard/pull/7093) — *merged upstream.* Found the pod page crashing on generic ephemeral volumes, [filed it](https://github.com/kubernetes-retired/dashboard/issues/7080), then fixed it myself. It was bugging me.
-- [**Colbert AI**](https://github.com/NextTechLabAP/Colbert-AI) — *team project at Next Tech Lab, built with two others.* GPT-2 (345M) fine-tuned on 500+ transcripts to mimic Stephen Colbert's monologue voice. Still [posting](https://x.com/DeepColbert). Was doing LLM hijinks before it was fashionable. 😎
+- [**Colbert AI**](https://github.com/NextTechLabAP/Colbert-AI) — *archived team project.* Built at Next Tech Lab with two others: GPT-2 (345M) fine-tuned on 500+ transcripts to mimic Stephen Colbert's monologue voice. Still [posting](https://x.com/DeepColbert). Was doing LLM hijinks before it was fashionable. 😎
 
 ---
 
@@ -65,6 +64,10 @@ A mix of things I've built, fixed, or accidentally broke:
 
 - **DevOpsDays Bengaluru 2023:** ["Using APISIX as a Reverse Proxy"](https://devopsdays.org/events/2023-bengaluru/program) — reverse proxying high-volume inference traffic. Co-presented with Vinuja Khatode.
 - **Visiting Scholar, [UC Berkeley SCET](https://scet.berkeley.edu/) (2019):** Crashed the Data-X program on a $20K scholarship and built Docker Hub analytics pipelines.
+
+**Speaker bio** — *for anyone who needs one:*
+
+> I build the platform layer other engineers build on: control planes, workflow DSLs, entity reconciliation, and schemas that refuse to let you ship a mistake. I talk about API gateways at conferences and still get a kick out of hacking on protocol compilers. Community builder, systems tinkerer, and far too interested in what protobuf descriptors will let you get away with.
 
 ---
 
@@ -92,7 +95,7 @@ A mix of things I've built, fixed, or accidentally broke:
 
 ## Let's Talk
 
-I'm happy to talk about platform architecture, workflow systems, Go infrastructure, conference talks, and technically interesting backend roles. Currently employed and not looking, but open to speaking invitations and open-source collaboration. I usually reply within a week.
+I'm happy to talk about platform architecture, workflow systems, Go infrastructure, and conference talks. I'm currently employed and not looking for a move, but I'm open to speaking invitations and open-source collaboration. I usually reply within a week.
 
 ## Reading
 
