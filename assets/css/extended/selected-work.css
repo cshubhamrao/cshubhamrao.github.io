@@ -1,0 +1,108 @@
+/* Selected work cards on the homepage.
+   Styled from PaperMod's own tokens (--entry, --border, --radius, --gap) so the
+   section reads as part of the theme rather than bolted on, and so dark mode is
+   inherited instead of re-declared. */
+
+/* The hero keeps its generous spacing but stops short of a full viewport, so the
+   top of the work section is visible without a deliberate scroll. Delete this rule
+   to restore the theme's full-height hero. */
+.main .profile {
+    min-height: calc(66vh - var(--header-height) - var(--footer-height) - (var(--gap) * 2));
+}
+
+.selected-work {
+    margin: 0 auto var(--gap);
+    max-width: var(--main-width);
+    width: 100%;
+}
+
+.selected-work h2 {
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--secondary);
+    margin-bottom: var(--content-gap);
+}
+
+.work-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+    gap: var(--content-gap);
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.work-card {
+    background: var(--entry);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: var(--gap);
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.work-card h3 {
+    font-size: 17px;
+    margin: 0;
+    line-height: 1.3;
+}
+
+.work-meta {
+    font-size: 13px;
+    color: var(--secondary);
+    margin: 0;
+}
+
+.work-desc {
+    font-size: 15px;
+    color: var(--content);
+    margin: 0;
+}
+
+.work-link {
+    font-size: 14px;
+    margin-top: auto;
+    padding-top: 6px;
+    box-shadow: none;
+}
+
+.work-link:hover {
+    box-shadow: 0 1px 0 var(--primary);
+}
+
+.work-more {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--gap);
+    margin-top: var(--content-gap);
+    font-size: 15px;
+}
+
+.work-more a {
+    box-shadow: 0 1px 0 var(--border);
+}
+
+.work-more a:hover {
+    box-shadow: 0 1px 0 var(--primary);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .work-card {
+        transition: border-color 0.15s ease;
+    }
+}
+
+.work-card:hover {
+    border-color: var(--tertiary);
+}
+
+@media (max-width: 500px) {
+    .main .profile {
+        min-height: auto;
+        padding-top: var(--gap);
+        padding-bottom: var(--gap);
+    }
+}
