@@ -1,0 +1,9 @@
+{{- /* Head custom content area. Overrides the theme's empty stub. */ -}}
+
+{{- /* Advertise llms.txt so agents can discover it by following a link rather than
+       by constructing the path. Some agents enforce URL provenance and refuse to
+       fetch a URL they assembled themselves, which makes a well-known-location file
+       unreachable unless something links to it. Paired with a visible footer link
+       (params.footer.text in config.yml), because head links are often dropped when
+       a page is converted to text. */ -}}
+<link rel="alternate" type="text/markdown" href="{{ "llms.txt" | absURL }}" title="llms.txt">

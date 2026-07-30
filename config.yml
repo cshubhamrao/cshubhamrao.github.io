@@ -62,6 +62,12 @@ params:
     icon: /apple-touch-icon.png
     iconHeight: 35
 
+  # Renders inside <footer>, between the copyright and the "Powered by" line.
+  # A real anchor to llms.txt, so agents that only follow links they have seen can
+  # reach it. See layouts/partials/extend_head.html for the machine-readable pair.
+  footer:
+    text: "[llms.txt](/llms.txt)"
+
   schema:
     publisherType: Person
     sameAs:
