@@ -20,7 +20,7 @@ minify:
 
 languages:
   en:
-    languageName: "English"
+    label: "English"  # renamed from languageName, deprecated in Hugo v0.158
     weight: 1
     taxonomies:
       category: categories
@@ -53,12 +53,32 @@ params:
   showtoc: true
   tocopen: false
 
+  # Full post text in the feed. Readers who subscribe should not have to click
+  # through, and it costs nothing on a site this size.
+  ShowFullTextinRSS: true
+
+  # Colours already declared in static/browserconfig.xml and site.webmanifest;
+  # repeated here so the theme emits matching meta tags instead of its defaults.
+  # (assets.favicon* are set above.)
+
+  # Client-side search over the JSON index declared in `outputs.home`.
+  fuseOpts:
+    isCaseSensitive: false
+    shouldSort: true
+    location: 0
+    distance: 1000
+    threshold: 0.4
+    minMatchCharLength: 0
+    keys: ["title", "permalink", "summary", "content"]
+
   assets:
     favicon: "/favicon.ico"
     favicon16x16: "/favicon-16x16.png"
     favicon32x32: "/favicon-32x32.png"
     apple_touch_icon: "/apple-touch-icon.png"
     safari_pinned_tab: "/safari-pinned-tab.svg"
+    theme_color: "#ffffff"
+    msapplication_TileColor: "#2b5797"
 
   label:
     text: "Shubham Rao"
@@ -233,12 +253,17 @@ menu:
       name: Reading
       url: /books/
       weight: 20
+    - identifier: search
+      name: Search
+      url: /search/
+      weight: 30
 
 outputs:
   home:
     - HTML
     - RSS
     - Sitemap
+    - JSON   # builds the Fuse.js index consumed by /search/
   section:
     - HTML
     - RSS
